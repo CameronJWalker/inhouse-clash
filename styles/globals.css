@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10;
+    background-color:#010A13;
+    padding: 20px;
+}
+
+.page-container {
+    background-color: #091428;
+    height: 90vh;
+}
+h1{
+    color:#A09B8C;
+}
