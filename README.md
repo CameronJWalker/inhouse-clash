@@ -1,9 +1,7 @@
 # Inhouse Clash
 
-## Overview
-
 A team randomizer for 5v5s with your friends
 
-### Technologies used
+## Technologies used
 
 React, Next, CSS
