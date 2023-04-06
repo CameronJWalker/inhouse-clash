@@ -3,14 +3,23 @@
 }
 
 body {
-    margin: 10;
+    display: flex;
+    margin: 15px;
     background-color:#010A13;
-    padding: 20px;
+    padding: 50px;
+    justify-content: center;
+
 }
 
 .page-container {
-    background-color: #091428;
-    height: 90vh;
+    background-color: #0A1428;
+
+    height: 80vh;
+    width: 80vw;
+
+    border-style: solid;
+    border-color: #785A28;
+    
 }
 h1{
     color:#A09B8C;
