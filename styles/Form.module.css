@@ -1,0 +1,32 @@
+.container{
+    display:grid;
+    grid-gap: 2rem;
+    justify-items: center;
+}
+.summonersName{
+    height: 7vh;
+    width: 40vw;
+    font-style: italic;
+    color: #A09B8C;
+    background-color: #010A13 ;
+    border-color: #785A28;
+    
+}   
+
+.summonersName:focus{
+    border-color: #C89B3C; 
+    outline: none;
+}
+
+.submit{
+    color:#F0E6D2; 
+    background-color:#005A82;
+    border-color:#0397AB;
+    
+    height: 4vh;
+    width: 14vw;
+    border-radius: 0 0 20px 20px;
+}
+.teamContainer{
+    border:#785A28
+}
