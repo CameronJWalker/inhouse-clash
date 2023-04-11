@@ -12,7 +12,7 @@ export default function Home() {
       setRoster([...roster, newRoster])
     }
   }
-
+  console.log(roster)
   return (
     <main className = "page-container">
       <form className={Form.container} onSubmit={handleSubmit}>
