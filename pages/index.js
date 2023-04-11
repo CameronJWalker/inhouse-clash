@@ -3,14 +3,21 @@ import Form from "../styles/Form.module.css"
 
 export default function Home() {
 
-  const [ roster, setRoster ] = useState([]);
+  const [roster, setRoster] = useState([]);
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    const newRoster = e.target.name.value;
+    if (roster.length < 10) {
+      setRoster([...roster, newRoster])
+    }
+  }
 
   return (
     <main className = "page-container">
-      <form className={Form.container}>
-        <input className={Form.summonersName}type="text" name="summoner" placeholder="Enter Summoner's Name..." />
-        <button className={Form.submit}> Submit </button>
+      <form className={Form.container} onSubmit={handleSubmit}>
+        <input className={Form.summonersName}type="text" name="name" placeholder="Enter Summoner's Name..." />
+        <button className={Form.submit} type="submit"> SUBMIT </button>
       </form>
     </main>
   )
