@@ -6,13 +6,17 @@
 .summonersName{
     height: 7vh;
     width: 40vw;
+    font-size: larger;
     font-style: italic;
-    color: #A09B8C;
+    
+    color: #F0E6D2;
     background-color: #010A13 ;
     border-color: #785A28;
     
 }   
-
+.summonersName::placeholder{
+    color: #F0E6D2;
+}
 .summonersName:focus{
     border-color: #C89B3C; 
     outline: none;
