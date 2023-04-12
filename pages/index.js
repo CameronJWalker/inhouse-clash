@@ -11,6 +11,7 @@ export default function Home() {
     if (roster.length < 10) {
       setRoster([...roster, newRoster])
     }
+    e.target.reset();
   }
   
   function randomizeRoster() {
