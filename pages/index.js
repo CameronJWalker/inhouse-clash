@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Form from "../styles/Form.module.css"
-
+import Button from "../styles/Button.module.css"
 export default function Home() {
 
   const [roster, setRoster] = useState([]);
@@ -12,12 +12,26 @@ export default function Home() {
       setRoster([...roster, newRoster])
     }
   }
-  console.log(roster)
+  
+  function randomizeRoster() {
+    roster.sort(()=> Math.random() - 0.5);
+  }
+
   return (
     <main className = "page-container">
       <form className={Form.container} onSubmit={handleSubmit}>
-        <input className={Form.summonersName}type="text" name="name" placeholder="Enter Summoner's Name..." />
-        <button className={Form.submit} type="submit"> SUBMIT </button>
+        <input 
+          className={Form.summonersName}
+          type="text" name="name" 
+          placeholder="Enter Summoner's Name..." 
+        />
+          {
+            roster.length == 10
+            ?
+            <button className={Button.submit} onClick={randomizeRoster}> RANDOMIZE </button>
+            :
+            <button className={Button.submit} type="submit"> SUBMIT </button>
+          }
       </form>
     </main>
   )
