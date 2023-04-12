@@ -17,8 +17,13 @@ export default function Home() {
   }
   
   function randomizeRoster() {
-    roster.sort(()=> Math.random() - 0.5);
-    
+    const randomRoster = [...roster].sort(()=> Math.random() - 0.5);
+    const team1Roster = randomRoster.slice(0, 5);
+    const team2Roster = randomRoster.slice(5, 10);
+
+    setTeam1(team1Roster)
+    setTeam2(team2Roster)
+
   }
 
   return (
