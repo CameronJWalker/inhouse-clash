@@ -3,7 +3,9 @@ import Form from "../styles/Form.module.css"
 import Button from "../styles/Button.module.css"
 export default function Home() {
 
-  const [roster, setRoster] = useState([]);
+  const [ roster, setRoster ] = useState([]);
+  const [ team1, setTeam1 ] = useState([]);
+  const [ team2, setTeam2 ] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -16,6 +18,7 @@ export default function Home() {
   
   function randomizeRoster() {
     roster.sort(()=> Math.random() - 0.5);
+    
   }
 
   return (
