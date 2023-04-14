@@ -16,6 +16,7 @@
 }   
 .summonersName::placeholder{
     color: #F0E6D2;
+    text-align: center;
 }
 .summonersName:focus{
     border-color: #C89B3C; 

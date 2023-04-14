@@ -13,13 +13,13 @@ body {
 .page-container {
     background-color: #0A1428;
     
-    height: 80vh;
+    height: 150%;
     width: 80vw;
 
     border-style: solid;
     border-color: #785A28;
     
-    display:flex;
+    display:grid;
     justify-content: center;
     align-items:center;
 }

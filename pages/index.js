@@ -45,8 +45,11 @@ export default function Home() {
             <button className={Button.submit} type="submit"> SUBMIT </button>
           }
       </form>
-      
-      <Teams />
+    
+      <Teams 
+        team1={team1}
+        team2={team2}
+      />
 
     </main>
   )
