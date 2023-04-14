@@ -47,6 +47,7 @@ export default function Home() {
       </form>
     
       <Teams 
+        roster={roster}
         team1={team1}
         team2={team2}
       />
