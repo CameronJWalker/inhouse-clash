@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Form from "../styles/Form.module.css"
 import Button from "../styles/Button.module.css"
+import Teams from "../components/Teams"
+
+
 export default function Home() {
 
   const [ roster, setRoster ] = useState([]);
@@ -42,6 +45,9 @@ export default function Home() {
             <button className={Button.submit} type="submit"> SUBMIT </button>
           }
       </form>
+      
+      <Teams />
+
     </main>
   )
 }
