@@ -8,7 +8,8 @@
     width: 40vw;
     background-color: #010A13 ;
     color: #F0E6D2;
-
+    font-size:large;
+    overflow: hidden;
     border-style: solid;
     border-color: #785A28;
 }
@@ -22,12 +23,14 @@
 .one, .two {
     height: 40vh;
     
-
     background-color: #010A13 ;
     color: #F0E6D2;
-
+    font-size:larger;
     border-style: solid;
     border-color: #785A28;
+}
+.header {
+    color: #785A28;
 }
 @media (max-width: 425px) {
     .container {
