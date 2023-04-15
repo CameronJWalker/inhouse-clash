@@ -12,17 +12,4 @@ body {
     justify-content: center;
     font-size: 16px;
 }
-.page-container {
-    background-color: #0A1428;
-    
-    height: 150%;
-    width: 80vw;
-
-    border-style: solid;
-    border-color: #785A28;
-    
-    display:grid;
-    justify-content: center;
-    align-items:center;
-}
 
