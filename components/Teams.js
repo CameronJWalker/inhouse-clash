@@ -8,7 +8,7 @@ export default function Teams(props) {
                 <>
                     <div className={Team.roster}>
                         {props.roster.map((ros, index)=>(
-                            <ol key={index}>{ros}</ol>
+                            <ol key={index} className={Team.names}>{ros}</ol>
                         ))}
                     </div>
                 </>

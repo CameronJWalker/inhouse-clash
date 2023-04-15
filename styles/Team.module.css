@@ -8,10 +8,22 @@
     width: 40vw;
     background-color: #010A13 ;
     color: #F0E6D2;
-    font-size:medium;
+    font-size:larger;
     overflow: hidden;
     border-style: solid;
     border-color: #785A28;
+}
+
+@media (min-width: 768px) {
+    .roster {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    .names{
+        flex-basis: 45%;
+    }
 }
 .teams {
     display: grid;
