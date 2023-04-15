@@ -13,8 +13,13 @@
 }
 .description {
     color:#C89B3C;
-    font-size: 1em;
+    font-size: 1vw;
     text-align: center;
-
+    
     margin: -50px;
+}
+@media (max-width: 425px) {
+    .description{
+        font-size: 4vw;
+    }
 }
