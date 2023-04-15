@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head'
 import Form from "../styles/Form.module.css"
 import Button from "../styles/Button.module.css"
 import Teams from "../components/Teams"
@@ -31,6 +32,10 @@ export default function Home() {
 
   return (
     <main className = "page-container">
+      <Head>
+        <title>Team Randomizer</title>
+        <link rel="icon" href="/LoLicon.png"/>
+      </Head>
       <form className={Form.container} onSubmit={handleSubmit}>
         <input 
           className={Form.summonersName}
